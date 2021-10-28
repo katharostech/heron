@@ -17,15 +17,24 @@ default = []
 
 [dependencies]
 heron_core = { version = "^0.11.0", path = "../core" }
-bevy = { git = "https://github.com/katharostech/bevy", branch = "bevy_retrograde_0.3", default-features = false }
+# bevy = { git = "https://github.com/katharostech/bevy", branch = "bevy_retrograde_0.3", default-features = false }
 rapier2d = { version = "^0.9.2", optional = true }
 rapier3d = { version = "^0.9.2", optional = true }
 fnv = "^1.0"
 crossbeam = "^0.8.0"
 
 [dev-dependencies]
-bevy = { git = "https://github.com/katharostech/bevy", branch = "bevy_retrograde_0.3", default-features = false }
+# bevy = { git = "https://github.com/katharostech/bevy", branch = "bevy_retrograde_0.3", default-features = false }
 rstest = "0.7"
+
+
+[dev-dependencies.bevy]
+git = "https://github.com/bevyengine/bevy"
+rev="6a8a8c9d21f32e0e46623db9438813b009f9e014"
+
+[dependencies.bevy]
+git = "https://github.com/bevyengine/bevy"
+rev="6a8a8c9d21f32e0e46623db9438813b009f9e014"
 
 [build-dependencies]
 cfg_aliases = "0.1.1"

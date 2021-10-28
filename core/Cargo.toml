@@ -8,9 +8,18 @@ description = "Core components and resources to use Heron"
 repository = "https://github.com/jcornaz/heron/"
 
 [dependencies]
-bevy = { git = "https://github.com/katharostech/bevy", branch = "bevy_retrograde_0.3", default-features = false }
+# bevy = { git = "https://github.com/katharostech/bevy", branch = "bevy_retrograde_0.3", default-features = false }
 duplicate = "^0.3.0"
 
 [dev-dependencies]
 rstest = "0.7"
-bevy = { git = "https://github.com/katharostech/bevy", branch = "bevy_retrograde_0.3", default-features = false, features = ["render"] }
+# bevy = { git = "https://github.com/katharostech/bevy", branch = "bevy_retrograde_0.3", default-features = false, features = ["render"] }
+
+
+[dev-dependencies.bevy]
+git = "https://github.com/bevyengine/bevy"
+rev="6a8a8c9d21f32e0e46623db9438813b009f9e014"
+
+[dependencies.bevy]
+git = "https://github.com/bevyengine/bevy"
+rev="6a8a8c9d21f32e0e46623db9438813b009f9e014"
